@@ -59,8 +59,8 @@ def comprobarRSA_PSS(texto, firma, key_public):
     return False
 
 key_alicia= crear_RSAKey()
-key_bob  =crear_RSAKey()
 guardar_RSAKey_Publica("alicia_keyPubli", key_alicia)
-guardar_RSAKey_Publica("bob_keyPubli", key_bob)
 guardar_RSAKey_Privada("alicia_keyPriv", key_alicia, "aliciaPrivada")
+key_bob  =crear_RSAKey()
+guardar_RSAKey_Publica("bob_keyPubli", key_bob)
 guardar_RSAKey_Privada("bob_keyPriv", key_bob, "bobPrivada")
